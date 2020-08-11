@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width">
+   <title>my website</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+      body{
+          margin: 0px;
+          padding: 0px;
+          font-family: Arial, Helvetica, sans-serif;
+      }
+      header {
+          position:absolute;
+          top:0;
+          left:0;
+          padding: 0 100px;
+          background-color: black;
+          width: 100%;
+          box-sizing: border-box;
+      }
+      .logo {
+          color:cornsilk;
+          height: 50px;
+          line-height: 50px;
+          font-size: 24px;
+          float:left;
+          font-weight: bold;
+      }
+      header nav{
+          float:right;
+      }
+      header nav ul {
+          margin:0px;
+          padding: 0px;
+          display:flex;
+      }
+      header nav ul li{
+          list-style:none;
+      }
+      header nav ul li a{
+          height:50px;
+          line-height: 50px;
+          padding:0 20px;
+          text-decoration: none;
+          color: rosybrown;
+          display:block;
+      }
+      header nav ul li a:hover{
+          color:whitesmoke;
+          background-color: teal;
+      }
+      .menu-toggle{
+          color:white;
+          float:right;
+          line-height: 50px;
+          font-size:24px;
+          cursor:pointer;
+          display:none;
+      }
+      @media(max-width:600px) {
+          header {
+              padding:0 20px;
+          }
+          .menu-toggle{
+              display:block;
+          }
+          header nav{
+              
+              position:absolute;
+              width:100%;
+              height:100%;
+              background-color: black;
+              top:50px;
+              left:-100%;
+              transition: 1s;
+          }
+          header nav ul{
+              display:block;
+              text-align:center;
+
+          }
+          header nav ul li a{
+              border-bottom:1px solid rgba(0,0,0,.2);
+          }
+
+      }
+      form {
+  text-align: center;
+  justify-content: center;
+  background-color: lightgray;
+  }
+.box{
+  border: 1px solid black;
+}
+.footer{
+  background-color:black;
+  color: white;
+  align-content: center;
+}
+footer a{
+  color: azure;
+}
+navbar {
+  text-align: center;
+}
+navbar h1 {
+  text-align: center;
+  background-color:  wheat;
+}
+navbar div {
+  background-color: wheat;
+}
+article {
+ display: flex;
+ justify-content: center;
+}
+hr{
+    border-top:1px dotted black ;
+}
+section {
+  text-align: center;
+  align-content: center;
+  background-color: lightgoldenrodyellow;
+  justify-content: center;
+}
+
+    </style>
+</head>
+  <body>
+      <header>
+          <div class="logo">STARTUP CELL</div>
+          <nav>
+              <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">Profile</a></li>
+              </ul>
+          </nav>
+          <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+      </header>
+      <div class="box">
+        <form action="/action_page.php">
+         <p><h3><b>Login/ signup</b></h3></p>
+         <label>enter your email id</label><br>
+         <input type="email"><br>
+         <label>enter password</label><br>
+         <input type="password"><br><br>
+         <input type="submit">
+        </form>
+        
+      </div>
+      
+      <navbar>
+        <h1>ABOUT US</h1>
+        <div>
+          <P>
+            The Government Karnataka is proud to be the first state
+            to announce the establishment of a dedicated Startup Cell!
+            The Startup Cells aim is to promote 
+            karnataka as the ultimate startup destination in the World.
+          </P>
+          
+           <div>
+             <p>
+               <a href="https://startup.karnataka.gov.in/startup-cell"> <p>THE STARTUP TEAM</p></a>
+               <br>
+               <img src="https://startup.karnataka.gov.in/wp-content/uploads/2017/06/3-150x150.png">
+             </P>
+             <p>
+               <a href="https://startup.karnataka.gov.in/wp-content/uploads/2019/09/Monitoring-and-Review-Committee-1.pdf"><p>MENTORS AND REVIEW COMMITTEE</P></a>
+               <br>
+               <img src="https://startup.karnataka.gov.in/wp-content/uploads/2014/07/startupcell2-150x150.png"> 
+             </p>
+            </div>
+        
+            <div>
+             <p>
+               <a href="https://startup.karnataka.gov.in/wp-content/uploads/2019/09/STARTUP-COUNCIL.pdf"><p>STARTUP COUNCIL</P></a>
+                <br>
+               <img src="https://startup.karnataka.gov.in/wp-content/uploads/2017/06/1-150x150.png"><br>
+              </p>
+              <p>
+               <a href="https://startup.karnataka.gov.in/startup-events/">KEY ACTIVITIES</a><br>
+               <img src="https://startup.karnataka.gov.in/wp-content/uploads/2014/07/Go-Global-150x150.png">
+             </p>
+            </div>
+        </div>
+      </navbar>
+      <hr>
+      <footer class="footer">
+      <p>copy right<br>
+        Helpline number : 040-67676767 <br>
+        Content Owned, Designed and Maintained by Startup Karnataka.
+        Karnataka Innovation and Technology Society (KITS) Department of 
+        Electronics, IT, 
+        Bt and S&T, Government of Karnataka.
+      </p>
+      </footer><hr>
+    
+      <section>
+    
+        <article>
+            <img src="https://startup.karnataka.gov.in/wp-content/themes/politics/images/GOK-ITBT-new.png">
+            <h1>STARTUP CELL</h1>
+       </article>
+       <br>
+       <hr color="bla">
+       <br>
+
+        <p>
+          WHAT IS A STARTUP ? HAVE NO IDEA ?<br>
+          DONT WORRY HERE IS A SMALL LINK TO CLARIFY YOUR DOUBTS ;D
+          <br>
+          <a href="https://www.startupindia.gov.in/">CLICK HERE</a>
+        </p>
+        <p>
+        <h1>EVENTS</h1>
+        </p>
+        <p>
+          <a href="https://startup.karnataka.gov.in/event/technology-in-agriculture/"><h2> Technology in Agriculture</h2></a>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRxEVpHjAnxkRwXEgvj8v83KrEx6YwGZtopag&usqp=CAU">
+          <div>
+             We are happy to invite you to Government of Karnataka led one day
+             workshop on
+             �Technology in Agriculture� on March 28th at Hotel Shangri La, 
+             Palace Road, Bengaluru.Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+             Quia voluptatem debitis deleniti odit molestiae. Recusandae! The workshop is being jointly organized
+             by Department of IT, BT and S&T and Department of Agriculture. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Error facilis aliquid maxime nam omnis, fuga quos eaque voluptates tenetur ut.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+             Itaque explicabo odit nobis natus labore deleniti voluptatibus cum aut molestias, praesentium quae quisquam dolorum
+             corrupti culpa vero, vitae voluptas consequuntur? Repellendus cupiditate eaque atque labore accusantium in,
+             quisquam blanditiis laboriosam nesciunt eos voluptatum ratione rem sed fugit delectus deserunt consectetur enim!
+             Hon�ble Ministers, Sri. Priyank Kharge and Sri.
+             Krishna Byre Gowda [..]
+          </div>
+        </p>
+        <p>
+          <a href="https://startup.karnataka.gov.in/event/blockchain-conclave/"><h2>Blockchain Conclave</h2></a>
+          <div>
+            Blockchain is one of the most disruptive of the emerging
+            technologies. In order to support the large and highly talented 
+            ecosystem of tech professionals within the state, Lorem ipsum, dolor sit amet
+            consectetur adipisicing elit. Deleniti voluptatum in aspernatur placeat ipsa 
+            praesentium dignissimos cum. Incidunt deserunt a cum facere illo excepturi, minima porro 
+            praesentium beatae eos ducimus odio, error tenetur consequuntur sequi! Maiores quis ducimus
+            exercitationem velit numquam enim aliquid architecto laborum voluptatem error natus inventore 
+            accusantium asperiores et explicabo id quam tempore repudiandae nam pariatur assumenda impedit, consectetur quisquam? 
+            Fugit ducimus amet minima nesciunt! Tenetur eveniet aut, pariatur ex cupiditate eius magnam ducimus, ut dolores, illo nemo? 
+            Inventore eveniet repudiandae porro facere voluptate laborum magnam ea reprehenderit possimus expedita ab,
+            voluptatibus saepe numquam quisquam consectetur explicabo?the Government
+            of Karnataka is proactively seeking to develop an enabling environment
+            for Blockchain. A Government's roadmap on Blockchain is being developed
+            for the same purpose and [..]
+          </div>
+        </p>
+        <p>
+          <a href="https://startup.karnataka.gov.in/event/blockchain-hackathon/"><h2>Blockchain Hackathon</h2></a>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRTmZ-oFwiPd3OW-85UfpHoG6X58o7oXzeiZg&usqp=CAU">
+          <div>
+            The  Government of Karnataka invites coders and blockchain 
+            enthusiasts to envision and build prototypes across government
+            departments. Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Commodi laboriosam, earum at non esse nobis voluptates debitis est nemo nihil iure inventore 
+            officiis exercitationem pariatur corrupti eligendi perspiciatis quo quod assumenda quisquam libero reprehenderit
+            ad fugiat suscipit! Totam cupiditate odit voluptatum pariatur nam, consectetur vel, excepturi ut accusamus ullam,
+            debitis placeat illum laudantium iste? Maxime neque obcaecati aut culpa, reiciendis vitae expedita officiis ipsam
+            provident accusamus, saepe dolorem eaque non doloribus delectus placeat optio? Unde neque, adipisci quidem'
+            architecto nesciunt corporis reiciendis magnam a dolor, nemo aperiam itaque at quo tempora dolore.
+            Ad adipisci expedita, alias distinctio maiores sunt. Magni.
+            Whether you are a competitive developer or a UI/UX expert, 
+            this three-day event is an ideal platform for you to interact with the 
+            government and unlock your potential to ideate,
+            invent and develop. Build apps and smart contracts [..]
+          </div>
+        </p>
+        <p>
+          <a href="https://startup.karnataka.gov.in/event/elevate-call-2/"><h2>Elevate Call 2</h2></a>
+    
+          <div>
+            Startups with an innovative tech based idea/solution Should be 
+            registered as an entity ( Pvt Ltd/OPC, LLP/Partnership, Proprietorship) 
+            in Karnataka Total revenue generated in terms of turnover from the date Lorem,
+            ipsum dolor sit amet consectetur adipisicing elit. Incidunt, cupiditate? Eligendi non
+            repellat quos doloribus architecto odit maxime ea consectetur asperiores laboriosam, velit,
+            hic blanditiis atque expedita autem voluptatum corporis numquam saepe dicta odio! Sit earum cumque
+            ut accusantium facere, blanditiis molestiae, nemo deserunt delectus, quia libero natus perspiciatis
+            quaerat expedita accusamus quos deleniti perferendis obcaecati sequi sint iste placeat harum officia. 
+            Nemo alias ullam voluptatem quos quasi nihil totam, explicabo, ad id ipsam, ducimus ab possimus consectetur qui.
+            Quos alias sequi laboriosam deserunt eius suscipit sint consequuntur, quidem quia earum nesciunt quo 
+            aliquam cum adipisci iure in quae eos!
+            of incorporation should be less than INR. 50 Crore At least 50% of 
+            qualified workforce should be engaged in Karnataka Less than 4 years
+            from [..]
+          </div>
+        </p>
+        <p>
+          <a href="https://startup.karnataka.gov.in/event/bengaluru-tech-summit/"><h2>Bengaluru Tech Summit</h2></a>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTifgW14_7JEyHR0k0uAqOVYCyupNFm19lQZQ&usqp=CAU">
+          <div>
+            Karnataka is globally recognised as the IT and BIO capital of India 
+            and Bengaluru has gained the reputation as the 4th largest technology
+            cluster of the world. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Blanditiis, sunt perferendis quibusdam deleniti non temporibus cupiditate exercitationem quasi eaque,
+            eum magnam maxime, magni facere explicabo? Dignissimos in similique corporis commodi aperiam sapiente
+            animi eius reprehenderit dolorum fugiat, dolores nobis ad, provident ex blanditiis molestiae nemo. Fuga ab natus
+            voluptates nam odit hic consectetur sapiente, quas exercitationem obcaecati possimus. Animi expedita architecto dolore, 
+            provident recusandae amet ut eius nobis dolor enim. Molestias, possimus natus voluptatum quo excepturi, beatae molestiae, 
+            distinctio minima soluta aut recusandae fugiat. Eum, velit, asperiores quibusdam aut quam laboriosam sunt enim animi 
+            facilis, magni voluptate porro quaerat. Assumenda.The Government of Karnataka offers the most 
+            conducive ecosystem for the startups and Bengaluru is now listed 
+            among the top ten hubs globally. Karnataka is home to the [�]
+          </div>
+        </p>
+     
+        <p>
+          <a href=""><h2>SPONSORSHIP TO STARTUPS AND COMPANIES TO PARTICIPATE IN JAPAN</h2></a>
+          <div>
+            The Managing Director, Karnataka Biotechnology & Information Technology
+            Services(KBITS),Bangalore-560027,Karnataka, invites applicatios from
+            Karnataka based SME and startup IT & ESDM companies for participating 
+            in Japan IT Week 2017 event in Big Sight-Tokyo, Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Ipsa maxime quis enim cum! Consequatur tempora sed, quos cupiditate aspernatur 
+            voluptatum quae voluptatibus non doloribus facere error esse in facilis dicta enim suscipit, qui fugiat deleniti corrupti. 
+            Corrupti, porro cupiditate nam iste rem id nihil debitis necessitatibus eius aut at eos alias odit, laudantium 
+            cumque exercitationem impedit! Quibusdam cum, incidunt vel nobis, fugit maxime doloribus corporis in rerum molestiae 
+            accusantium est impedit quidem neque voluptatem recusandae aliquid a debitis omnis suscipit alias, hic perferendis? 
+            Rerum, earum, eum odit vitae facere iusto quidem consequatur pariatur voluptates magni libero eligendi atque nostrum 
+            ex.along with officials
+            of KBITS,Department of IT,BT and S&T,Government of Karnataka,Interested
+            companies may apply to showcase their company for attracting overseas
+            business.Selected companies [�]
+          </div>
+        </p>
+        <p>
+          <a href="https://startup.karnataka.gov.in/event/pravasi-bharatiya-divas/"><h2>Pravasi Bharatiya Divas</h2></a>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ4kY7pWcqUlDSV_MnrBsyxFEXw8Suit73qPw&usqp=CAU">
+          <div>  
+            Pravasi Bharatiya Divas (PBD) is celebrated on 9th January every
+            year to mark the contribution of Overseas Indian community in the
+            development of India.PBD conventions are Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Blanditiis atque eligendi ut unde quia odio ipsam temporibus, provident labore, 
+            sequi dolor commodi tempore quisquam. Aperiam iste, quas omnis nisi voluptas nam laboriosam, quisquam perspiciatis, 
+            tempore facilis est consequatur harum? Est cupiditate alias harum repudiandae itaque? Praesentium vitae eveniet 
+            voluptas dolores omnis nisi quo quis dolorum harum voluptatibus voluptatum magni, odit, non numquam maxime sequi. 
+            Voluptates perferendis molestiae odio accusantium omnis dolor iusto aspernatur placeat? Deleniti enim aliquid 
+            voluptate accusamus perspiciatis temporibus distinctio impedit, dicta, expedita adipisci deserunt animi ipsum a 
+            provident reprehenderit officiis nihil architecto eos omnis nobis? Nulla, sapiente.being held every year since
+            2003. These conventions provide a platform to the overseas Indian
+            community to engage with the government and people of the land of 
+            their ancestors [�]
+          </div>
+        </p>
+        
+        <p>
+          <a href=""><h2>YESSS (YOUNG ENTREPRENEURS START UPS IN SOARING SPIRITS)</h2></a>
+          <div>
+            YESSS is a forum for Start-ups and Young Entrepreneurs with business
+            ideas who are looking for partnership, collaboration, investment and
+            mentoring, it provides opportunities for innovative ideas to blossom
+            into a complete growth plan, Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Ut error quasi neque ex autem praesentium quaerat dicta rem harum, voluptatum quae, dignissimos magnam 
+            totam ea consequuntur aspernatur eveniet similique blanditiis corrupti ab iure repudiandae deleniti? 
+            Sequi dicta voluptatibus quos omnis illum, tempora, excepturi officiis animi tempore vero adipisci explicabo mollitia 
+            hic facilis illo saepe delectus totam, minus debitis fuga. Non earum libero repellat perferendis, qui, 
+            deserunt explicabo fuga quidem et architecto commodi nobis vitae impedit necessitatibus tenetur ducimus 
+            voluptas alias dolore neque cupiditate. In est autem, delectus tempora aut, consequuntur sunt dolor eius 
+            eveniet reprehenderit explicabo facilis numquam quae molestias.in the presence of IT Veterans and
+            Investors. Submit abstract, and see other details at the register link. 
+            Selected start-ups during [�]
+          </div>
+        </p>
+        <hr>
+      <footer class="footer">
+      <p>copy right<br>
+        Helpline number : 040-67676767 <br>
+        Content Owned, Designed and Maintained by Startup Karnataka.
+        Karnataka Innovation and Technology Society (KITS) Department of 
+        Electronics, IT, 
+        Bt and S&T, Government of Karnataka.
+      </p>
+      </footer>
+      </section>
+    
+  </body>
+
+</html>
